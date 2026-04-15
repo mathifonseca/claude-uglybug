@@ -11,15 +11,15 @@ Adversarial bug-hunt skill for [Claude Code](https://claude.com/claude-code). Si
 
 ```mermaid
 flowchart LR
-    U([/uglybug]) --> H[Hunter]
-    H --> S[Skeptic]
-    H --> R[Reproducer]
-    S --> Ref[Referee]
+    U([/uglybug]) --> H["🏴 Hunter<br/>reports every bug"]
+    H --> S["🛡️ Skeptic<br/>rebuts or concedes"]
+    H --> R["🔍 Reproducer<br/>fact-checks the code"]
+    S --> Ref["⚖️ Referee<br/>renders verdict"]
     R --> Ref
     Ref --> W{More waves?}
     W -->|Yes| H
-    W -->|No| C[Consolidator]
-    W -->|No| Hd[Hardener]
+    W -->|No| C["📊 Consolidator<br/>synthesizes patterns"]
+    W -->|No| Hd["🔒 Hardener<br/>proposes prevention"]
     C --> O([Report])
     Hd --> O
 ```
